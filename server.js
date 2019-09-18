@@ -34,10 +34,12 @@ const posts = [
     { id: 13, name: 'Post 13' }
 ];
 
+// eslint-disable-next-line no-use-before-define
 app.get('/posts', paginatedResults(posts), (req, res) => {
     res.json(res.paginatedResults);
 });
 
+// eslint-disable-next-line no-use-before-define
 app.get('/users', paginatedResults(users), (req, res) => {
     res.json(res.paginatedResults);
 });
